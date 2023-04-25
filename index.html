@@ -8,19 +8,28 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="shortcut icon" href="/Images//logo/logo-fav.ico" type="image/x-icon">
     
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
-    <div id="navbar">
-        <img src="/Images//logo/logo-trans.png" alt="logo" class="logo">
-        <a href="">TEACHERS</a>
-        <a href="">SUBJECT</a>
-        <a href="">CLASS</a>   
-    </div>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <span class="material-symbols-outlined">
+            menu
+        </span>
+        </label>
+        <img src="/Images/logo/logo-trans.png" alt="logo" id="logo">
+        <ul>
+            <li><a href="/class/select.html" class="nav-btn">CLASS</a></li>
+            <li><a href="#" class="nav-btn">NOTES</a></li>
+            <li><a href="#" class="nav-btn">MOCK TEST</a></li> 
+        </ul>
+      </nav>
     <div class="choosek">
         <form action="/php/class.php" method="get">
             <select name="class" id="class0">
                 <option value="7">Class 7</option>
-                <option value="8">Class 8</option>
+                <option value="8" selected>Class 8</option>
                 <option value="9">Class 9</option>
                 <input type="submit" id="submit" value="Let's go">
             </select>
@@ -34,6 +43,5 @@
         <p><a href="https://api.whatsapp.com/send/?phone=919114466826" target="_blank">Report Issue</a> | <a href="https://linktr.ee/real_dibyanshu" target="_blank">About Me</a></p>
         
     </div>
-    <script src="/javascript/navbar.js"></script>
 </body>
 </html
